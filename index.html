@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>otp Generator with email verification</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container1  ">
+        <h2>OTP Generator with Email Verification</h2>
+        <br />
+        <h4>Enter your  valid email address</h4>
+        <br />
+        <h6>you will receive an OTP at this email address</h6>
+        <br>
+        <form class="otpForm">
+            
+            <input type="email" id="emailAdress" name="email" placeholder="Enter your email address" autocomplete="email" required>
+            <button class="mybutton" type="submit">Send OTP</button>
+        </form>
+        <p class="status" id="emailStatus" role="status" aria-live="polite"></p>
+
+    </div>
+<div class="container2" hidden>
+        <h2>OTP Verification</h2>
+        <br />
+        <h4>Enter the one-time password sent to <span id="verifyEmail"></span></h4>
+
+        <form class="otp-Form">
+            <p>Enter the 4-digit code sent to your email.</p>
+            <div class="otps">
+            <input type="text" inputmode="numeric" autocomplete="one-time-code" aria-label="First OTP digit" maxlength="1" required>
+            <input type="text" inputmode="numeric" aria-label="Second OTP digit" maxlength="1" required>
+            <input type="text" inputmode="numeric" aria-label="Third OTP digit" maxlength="1" required>
+            <input type="text" inputmode="numeric" aria-label="Fourth OTP digit" maxlength="1" required>
+            </div>
+            <p class="status" id="otpStatus" role="status" aria-live="polite"></p>
+            <p class="resendPrompt">
+                Didn't receive the code? <button class="resendbutton" type="button">Resend OTP</button>
+            </p>
+            <button class="verifybutton" type="submit" disabled>Verify OTP</button>
+        </form>
+        <button class="changeEmailButton" type="button">Change email address</button>
+
+    </div>
+
+
+<div class="container3" hidden>
+        <h1>Congratulation</h1>
+       <p> welcome to home page</p>
+        <br />
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBja0aZUqQXZRhpRwx1PtePFZSzbmwcApg9WflxszIVQ&s=10" alt="">
+        <p> Thank you</p>
+        <p>your otp hasbeen verifed successfully</p>
+       
+            
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+</body>
+</html>
